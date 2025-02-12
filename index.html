@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netfilm</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8cfd81ad39.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="title">
+    <h1>NetFilm</h1>
+  </div>
+  <div class="container">
+    <div class="search-bar">
+      <button id="moviesButton">Films</button>
+      <button id="seriesButton">Séries</button>
+      <input type="text" id="searchInput" placeholder="Entrez le titre d'un film ou série...">
+      <button id="searchButton">Rechercher</button>
+    </div>
+    <div id="resultsContainer"></div>
+    <p id="noResultsMessage" style="display: none;">Aucun résultat trouvé.</p>
+    <div id="loadingSpinner" style="display: none;">Chargement...</div>
+  </div>
+
+  <div id="button">
+    <button id="prevButton">
+      <i class="fa-solid fa-arrow-left"></i>
+    </button>
+    <button id="nextButton">
+      <i class="fa-solid fa-arrow-right"></i>
+    </button>
+  </div>
+  <div id="pageInfo"></div>
+
+  <footer>
+    <div class="social-media">
+        <ul class="list-inline social-buttons animated fadeIn">
+            <li><a id="github" href="https://github.com/Ask1ng-git" target="_blank"><i class="fa fa-github fa-2x fa-shake" style="--fa-animation-duration: 3s;"></i></a></li>
+            <li><a id="linkedin" href="https://www.linkedin.com/in/gay-dylan" target="_blank"><i class="fa fa-linkedin fa-2x fa-shake"style="--fa-animation-duration: 3s;"></i></a></li>
+        </ul>
+    </div>
+    <p>© Dylan Gay 2025</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
